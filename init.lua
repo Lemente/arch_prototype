@@ -56,10 +56,10 @@ local arch_node_list = {
 --local material_list = {}
 
 local function register_arch(material_list,mat_modname)
-	for _, material in ipairs(material_list) do
+	for _, material in pairs(material_list) do
 		local material_node = minetest.registered_nodes[mat_modname..":"..material]
 		if material_node then
-			for _, shape in ipairs(arch_node_list) do
+			for _, shape in pairs(arch_node_list) do
 				local def = table.copy(material_node)
 				def.drawtype = "mesh"
 				def.paramtype = "light"
@@ -166,15 +166,6 @@ if minetest.get_modpath("coloredwood") then
 	register_arch(material_list, "coloredwood")
 end
 
---BAKED_CLAY
-if minetest.get_modpath("baked_clay") then
-	local material_list = {
-		"",
-		"",
-	}
-	register_arch(material_list, "baked_clay")
-end
-
 --ETHEREAL
 if minetest.get_modpath("ethereal") then
 	local material_list = {
@@ -184,7 +175,7 @@ if minetest.get_modpath("ethereal") then
 		"basandra_wood",
 		"blue_marble",
 		"blue_marble_tile",
-		"crystal_blockd",
+		"crystal_block",
 		"frost_wood",
 		"olive_wood",
 		"palm_wood",
