@@ -74,6 +74,7 @@ local function register_arch(material_list,mat_modname)
 	end
 end
 
+--MOREBLOCKS
 if minetest.get_modpath("moreblocks") then
 	local material_list = {
 		"copperpatina",
@@ -88,6 +89,7 @@ if minetest.get_modpath("moreblocks") then
 	register_arch(material_list, "moreblocks")
 end
 
+--DEFAULT
 if minetest.get_modpath("default") then
 	local material_list = {
 		"acacia_wood",
@@ -114,3 +116,131 @@ if minetest.get_modpath("default") then
 	register_arch(material_list, "default")
 end
 
+--MOREORES
+if minetest.get_modpath("moreores") then
+	local material_list = {
+		"mithril_block",
+		"silver_block",
+	}
+	register_arch(material_list, "moreores")
+end
+
+--MORETREES
+if minetest.get_modpath("moretrees") then
+	local material_list = {
+		"beech_planks",
+		"apple_tree_planks",
+		"oak_planks",
+		"sequoia_planks",
+		"birch_planks",
+		"palm_planks",
+		"date_palm_planks",
+		"spruce_planks",
+		"cedar_planks",
+		"poplar_planks",
+		"poplar_small_planks",
+		"willow_planks",
+		"rubber_tree_planks",
+		"fir_planks",
+		"jungletree_planks",
+	}
+	register_arch(material_list, "moretrees")
+end
+
+--UNIFIEDBRICKS
+if minetest.get_modpath("unifiedbricks") then
+	local material_list = {
+		"brickblock_multicolor_dark",
+		"brickblock_multicolor_light",
+		"brickblock_multicolor_medium",
+	}
+	register_arch(material_list, "unifiedbricks")
+end
+
+--COLOREDWOOD
+if minetest.get_modpath("coloredwood") then
+	local material_list = {
+		"wood_block",
+--		"",
+	}
+	register_arch(material_list, "coloredwood")
+end
+
+--BAKED_CLAY
+if minetest.get_modpath("baked_clay") then
+	local material_list = {
+		"",
+		"",
+	}
+	register_arch(material_list, "baked_clay")
+end
+
+--ETHEREAL
+if minetest.get_modpath("ethereal") then
+	local material_list = {
+		"banana_wood",
+		"bamboo_block",
+		"birch_wood",
+		"basandra_wood",
+		"blue_marble",
+		"blue_marble_tile",
+		"crystal_blockd",
+		"frost_wood",
+		"olive_wood",
+		"palm_wood",
+		"redwood_wood",
+		"sakura_wood",
+		"yellow_wood",
+		"willow_wood",
+		"snowbrick",
+		"icebrick",
+	}
+	register_arch(material_list, "ethereal")
+end
+
+--BAKEDCLAY
+if minetest.get_modpath("bakedclay") then
+	local material_list = {
+		"terracotta_black",
+		"black",
+		"terracotta_blue",
+		"blue",
+		"terracotta_brown",
+		"brown",
+		"terracotta_cyan",
+		"cyan",
+		"terracotta_dark_green",
+		"dark_green",
+		"terracotta_dark_grey",
+		"dark_grey",
+		"terracotta_green",
+		"green",
+		"terracotta_grey",
+		"grey",
+		"terracotta_magenta",
+		"magenta",
+		"terracotta_orange",
+		"orange",
+		"terracotta_pink",
+		"pink",
+		"terracotta_red",
+		"red",
+		"terracotta_violet",
+		"violet",
+		"terracotta_white",
+		"white",
+		"terracotta_yellow",
+		"yellow",
+		"natural",
+	}
+	register_arch(material_list, "bakedclay")
+end
+
+--[[
+if minetest.get_modpath("") then
+	local material_list = {
+		"",
+		"",
+	}
+	register_arch(material_list, "")
+end]]
