@@ -5,6 +5,7 @@ To Do
 - fix "lancet ridge" shape compared to "large rounded cornice"
 - add 1 node round arch + ridge
 - improve on_place (prediction?)
+- change item texture with side view
 - add craft recipes
 - add tool to build arches in a selection?
 - fix coloredwood and unifiedbricks support
